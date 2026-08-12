@@ -6,7 +6,7 @@ import {defineConfig} from 'vite';
 export default defineConfig(({ command }) => {
   return {
     // Relative base path ('./') hanya aktif saat build produksi
-    base: command === 'build' ? './' : '/',
+    base: command === 'build' ? '/rulilesmana/' : '/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
