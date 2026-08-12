@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { Newspaper, Calendar, Clock, ArrowRight, Bookmark, Search } from 'lucide-react';
 import { BLOG_POSTS_DATA } from '../data/portfolioData';
+import { LazyImage } from './LazyImage';
 
 export const Blog: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>('Semua');
@@ -62,13 +63,13 @@ export const Blog: React.FC = () => {
               <div>
                 {post.image && (
                   <div className="w-full h-48 overflow-hidden relative">
-                    <img
+                    <LazyImage
                       src={post.image}
                       alt={post.title}
-                      referrerPolicy="no-referrer"
+                      containerClassName="w-full h-full"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-80" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-80 pointer-events-none" />
                   </div>
                 )}
 

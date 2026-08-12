@@ -2,6 +2,8 @@ import React from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { X, Printer, Mail, Phone, MapPin } from 'lucide-react';
 import { PROFILE_DATA, EXPERIENCES_DATA, EDUCATION_DATA, CERTIFICATIONS_DATA, HARD_SKILLS_DATA, ROLES_DATA } from '../data/portfolioData';
+import { LazyImage } from './LazyImage';
+import ruliPhoto from '../assets/profile.jpg';
 
 interface CVModalProps {
   isOpen: boolean;
@@ -60,14 +62,11 @@ export const CVModal: React.FC<CVModalProps> = ({ isOpen, onClose }) => {
             <div className="border-b-2 border-slate-900 pb-6">
               <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
                 <div className="flex items-center gap-4">
-                  <img
-                    src={PROFILE_DATA.photoUrl}
+                  <LazyImage
+                    src={ruliPhoto || PROFILE_DATA.photoUrl}
                     alt={PROFILE_DATA.name}
-                    referrerPolicy="no-referrer"
-                    onError={(e) => {
-                      (e.target as HTMLImageElement).src = `https://drive.google.com/uc?export=view&id=1eS3eEVmrq9MKYnWuE8xcpoq-WwM7xaFj`;
-                    }}
-                    className="w-20 h-24 rounded-xl object-cover object-top border-2 border-slate-900 shadow-sm shrink-0"
+                    containerClassName="w-20 h-24 rounded-xl overflow-hidden shrink-0 border-2 border-slate-900 shadow-sm"
+                    className="w-full h-full object-cover object-top"
                   />
                   <div>
                     <h1 className="text-3xl font-heading font-extrabold text-slate-900 tracking-tight">

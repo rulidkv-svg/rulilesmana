@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- Main Home Page (Primary Domain) -->
+  <url>
+    <loc>https://www.rulilesmana.my.id/</loc>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.rulilesmana.my.id/" />
+    <image:image>
+      <image:loc>https://www.rulilesmana.my.id/ruli-lesmana.jpg</image:loc>
+      <image:title>Ruli Lesmana, S.T. - Profile</image:title>
+      <image:caption>Profil Ruli Lesmana, S.T., Pendidik Informatika &amp; Penggerak Literasi Garut</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Section: Tentang Saya -->
+  <url>
+    <loc>https://www.rulilesmana.my.id/#about</loc>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Section: Pengalaman Kerja -->
+  <url>
+    <loc>https://www.rulilesmana.my.id/#experience</loc>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Section: Peran &amp; Organisasi -->
+  <url>
+    <loc>https://www.rulilesmana.my.id/#roles</loc>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Section: Pendidikan &amp; Sertifikasi -->
+  <url>
+    <loc>https://www.rulilesmana.my.id/#education</loc>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Section: Portofolio Proyek -->
+  <url>
+    <loc>https://www.rulilesmana.my.id/#projects</loc>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Section: Publikasi &amp; Karya Tulis -->
+  <url>
+    <loc>https://www.rulilesmana.my.id/#publications</loc>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Section: Artikel &amp; Blog -->
+  <url>
+    <loc>https://www.rulilesmana.my.id/#blog</loc>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Section: Kontak -->
+  <url>
+    <loc>https://www.rulilesmana.my.id/#contact</loc>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Mirror/Secondary Domain Target -->
+  <url>
+    <loc>https://www.kangruli.web.id/</loc>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+</urlset>

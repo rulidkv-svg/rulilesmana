@@ -3,6 +3,10 @@ import { motion } from 'motion/react';
 import { ExternalLink, Search, Sparkles, Filter, Info, X, Globe, Layers } from 'lucide-react';
 import { PROJECTS_DATA } from '../data/portfolioData';
 import { Project, ProjectCategory } from '../types';
+import { LazyImage } from './LazyImage';
+import digitalLabImg from '../assets/digital_learning_lab.jpg';
+import tbmReadingImg from '../assets/community_tbm_reading.jpg';
+import techWorkshopImg from '../assets/educator_tech_workshop.jpg';
 
 export const Projects: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState<ProjectCategory | 'Semua'>('Semua');
@@ -93,11 +97,11 @@ export const Projects: React.FC = () => {
               <div>
                 {/* Image Preview Banner */}
                 <div className="relative h-48 w-full overflow-hidden bg-slate-200 dark:bg-slate-800">
-                  <img
+                  <LazyImage
                     src={project.previewUrl}
                     alt={project.title}
+                    containerClassName="w-full h-full"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent" />
 

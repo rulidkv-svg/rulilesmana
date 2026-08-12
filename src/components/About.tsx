@@ -2,9 +2,10 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { BookOpen, MapPin, Phone, Mail, Award, GraduationCap, Users, Sparkles, CheckCircle2, Image as ImageIcon } from 'lucide-react';
 import { PROFILE_DATA } from '../data/portfolioData';
-import digitalLabImg from '../assets/images/digital_learning_lab_1786492016157.jpg';
-import tbmReadingImg from '../assets/images/community_tbm_reading_1786492034508.jpg';
-import techWorkshopImg from '../assets/images/educator_tech_workshop_1786492049421.jpg';
+import { LazyImage } from './LazyImage';
+import digitalLabImg from '../assets/digital_learning_lab.jpg';
+import tbmReadingImg from '../assets/community_tbm_reading.jpg';
+import techWorkshopImg from '../assets/educator_tech_workshop.jpg';
 
 export const About: React.FC = () => {
   return (
@@ -94,37 +95,37 @@ export const About: React.FC = () => {
               
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                 <div className="rounded-xl overflow-hidden relative group aspect-video">
-                  <img
+                  <LazyImage
                     src={digitalLabImg}
                     alt="Lab Informatika & Digital Studio"
-                    referrerPolicy="no-referrer"
+                    containerClassName="w-full h-full"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex items-end p-2">
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex items-end p-2 pointer-events-none">
                     <span className="text-[10px] font-semibold text-white">Lab & Studio Digital</span>
                   </div>
                 </div>
 
                 <div className="rounded-xl overflow-hidden relative group aspect-video">
-                  <img
+                  <LazyImage
                     src={tbmReadingImg}
                     alt="Taman Baca AIUEO"
-                    referrerPolicy="no-referrer"
+                    containerClassName="w-full h-full"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex items-end p-2">
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex items-end p-2 pointer-events-none">
                     <span className="text-[10px] font-semibold text-white">TBM AIUEO Sukawangi</span>
                   </div>
                 </div>
 
                 <div className="rounded-xl overflow-hidden relative group aspect-video">
-                  <img
+                  <LazyImage
                     src={techWorkshopImg}
                     alt="Ruang Pengembangan Modul"
-                    referrerPolicy="no-referrer"
+                    containerClassName="w-full h-full"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex items-end p-2">
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex items-end p-2 pointer-events-none">
                     <span className="text-[10px] font-semibold text-white">Workshop & Modul TIK</span>
                   </div>
                 </div>
@@ -144,14 +145,11 @@ export const About: React.FC = () => {
               
               {/* Photo Header */}
               <div className="flex items-center gap-4 pb-4 border-b border-slate-100 dark:border-slate-800">
-                <img
+                <LazyImage
                   src={PROFILE_DATA.photoUrl}
                   alt={PROFILE_DATA.name}
-                  referrerPolicy="no-referrer"
-                  onError={(e) => {
-                    (e.target as HTMLImageElement).src = `https://drive.google.com/uc?export=view&id=1eS3eEVmrq9MKYnWuE8xcpoq-WwM7xaFj`;
-                  }}
-                  className="w-16 h-16 rounded-2xl object-cover object-top border-2 border-cyan-500 shadow-md shrink-0"
+                  containerClassName="w-16 h-16 rounded-2xl overflow-hidden shrink-0 border-2 border-cyan-500 shadow-md"
+                  className="w-full h-full object-cover object-top"
                 />
                 <div>
                   <h3 className="text-lg font-heading font-bold text-slate-900 dark:text-white">

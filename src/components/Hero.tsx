@@ -2,6 +2,8 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { ArrowDown, Briefcase, GraduationCap, Sparkles, BookOpen, MessageSquare, Award, ExternalLink } from 'lucide-react';
 import { PROFILE_DATA } from '../data/portfolioData';
+import { LazyImage } from './LazyImage';
+import heroProfilePhoto from '../assets/profile.jpg';
 
 interface HeroProps {
   onOpenCVModal: () => void;
@@ -109,13 +111,11 @@ export const Hero: React.FC<HeroProps> = ({ onOpenCVModal }) => {
                 
                 {/* Modern Rounded Portrait Image Component */}
                 <div className="relative mx-auto w-full max-w-[280px] sm:max-w-[310px] aspect-[3/4] rounded-2xl overflow-hidden bg-slate-900 border border-slate-200/60 dark:border-slate-700/60 shadow-lg transition-transform duration-500 ease-out group-hover:scale-105">
-                  <img
-                    src={PROFILE_DATA.photoUrl}
+                  <LazyImage
+                    src={heroProfilePhoto || PROFILE_DATA.photoUrl}
                     alt={PROFILE_DATA.name}
-                    referrerPolicy="no-referrer"
-                    onError={(e) => {
-                      (e.target as HTMLImageElement).src = `https://drive.google.com/uc?export=view&id=1eS3eEVmrq9MKYnWuE8xcpoq-WwM7xaFj`;
-                    }}
+                    priority={true}
+                    containerClassName="w-full h-full"
                     className="w-full h-full object-cover object-top transition-transform duration-500 ease-out group-hover:scale-105"
                   />
                   

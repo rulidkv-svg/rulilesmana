@@ -1,0 +1,31 @@
+{
+  "short_name": "Ruli Lesmana",
+  "name": "Ruli Lesmana, S.T. | Pendidik, Teknolog & Penggerak Literasi",
+  "description": "Website portofolio profesional Ruli Lesmana, S.T. - Pendidik Informatika, Instruktur Teknologi, Pegiat Literasi, dan Pengembang Pembelajaran Digital.",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any"
+    },
+    {
+      "src": "/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "lang": "id"
+}

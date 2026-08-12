@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { Book, FileText, Mic, Calendar, UserCheck, Sparkles, ExternalLink } from 'lucide-react';
 import { PUBLICATIONS_DATA } from '../data/portfolioData';
+import { LazyImage } from './LazyImage';
 
 export const Publications: React.FC = () => {
   const getTypeIcon = (type: string) => {
@@ -46,13 +47,13 @@ export const Publications: React.FC = () => {
               <div>
                 {/* Cover Preview Image */}
                 <div className="relative h-52 w-full overflow-hidden bg-slate-200 dark:bg-slate-800">
-                  <img
+                  <LazyImage
                     src={pub.coverImage}
                     alt={pub.title}
+                    containerClassName="w-full h-full"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    loading="lazy"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/30 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/30 to-transparent pointer-events-none" />
 
                   <div className="absolute top-3 left-3 flex items-center gap-2">
                     <span className="px-3 py-1 rounded-full text-[10px] font-bold tracking-wide uppercase bg-slate-900/80 backdrop-blur-md text-amber-300 border border-slate-700 flex items-center gap-1.5">

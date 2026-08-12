@@ -7,72 +7,156 @@
     <!-- Primary Meta Tags -->
     <title>Ruli Lesmana, S.T. | Pendidik, Teknolog & Penggerak Literasi</title>
     <meta name="title" content="Ruli Lesmana, S.T. | Pendidik, Teknolog & Penggerak Literasi" />
-    <meta name="description" content="Website portofolio profesional Ruli Lesmana, S.T. - Pendidik Informatika, Instruktur Teknologi, Pegiat Literasi, Pengembang Pembelajaran Digital, dan Sekretaris Komunitas Ngejah." />
-    <meta name="keywords" content="Ruli Lesmana, Kang Ruli, Pendidik, Guru Informatika, Teknolog, Komunitas Ngejah, TBM AIUEO, PKBM Celah Cahaya, DKV Learn Studio, Garut, Guru Penggerak" />
+    <meta name="description" content="Website portofolio profesional Ruli Lesmana, S.T. - Pendidik Informatika, Instruktur Teknologi, Pegiat Literasi, Pengembang Pembelajaran Digital, dan Sekretaris Komunitas Ngejah di Garut, Jawa Barat." />
+    <meta name="keywords" content="Ruli Lesmana, Kang Ruli, Pendidik, Guru Informatika, Teknolog, Komunitas Ngejah, TBM AIUEO, PKBM Celah Cahaya, DKV Learn Studio, Garut, Guru Penggerak, Pembelajaran Digital, Literasi Digital" />
     <meta name="author" content="Ruli Lesmana, S.T." />
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="language" content="Indonesian" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="theme-color" content="#0f172a" />
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.rulilesmana.my.id/" />
+
+    <!-- GitHub Pages SPA Routing Decoder -->
+    <script type="text/javascript">
+      (function(l) {
+        if (l.search[1] === 'p') {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).filter(function(s) {
+            return s.slice(0, 2) === 'p='
+          })[0];
+          if (decoded) {
+            window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decodeURIComponent(decoded.slice(2)) + l.hash
+            );
+          }
+        }
+      })(window.location);
+    </script>
+
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="ID-JB" />
+    <meta name="geo.placename" content="Garut, Jawa Barat, Indonesia" />
+    <meta name="geo.position" content="-7.4682;107.8687" />
+    <meta name="ICBM" content="-7.4682, 107.8687" />
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:site_name" content="Portofolio Ruli Lesmana, S.T." />
     <meta property="og:url" content="https://www.rulilesmana.my.id/" />
     <meta property="og:title" content="Ruli Lesmana, S.T. | Pendidik, Teknolog & Penggerak Literasi" />
-    <meta property="og:description" content="Website portofolio profesional Ruli Lesmana, S.T., pendidik Informatika, instruktur teknologi, pegiat literasi, pengembang pembelajaran digital, dan aktivis komunitas." />
-    <meta property="og:image" content="https://www.kangruli.web.id/og-image.jpg" />
+    <meta property="og:description" content="Website portofolio profesional Ruli Lesmana, S.T. - Pendidik Informatika, Instruktur Teknologi, Pegiat Literasi, Pengembang Pembelajaran Digital, dan Sekretaris Komunitas Ngejah." />
+    <meta property="og:image" content="https://www.rulilesmana.my.id/ruli-lesmana.jpg" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="profile:first_name" content="Ruli" />
+    <meta property="profile:last_name" content="Lesmana" />
+    <meta property="profile:username" content="kang.ruli" />
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://www.rulilesmana.my.id/" />
-    <meta property="twitter:title" content="Ruli Lesmana, S.T. | Pendidik, Teknolog & Penggerak Literasi" />
-    <meta property="twitter:description" content="Website portofolio profesional Ruli Lesmana, S.T., pendidik Informatika, instruktur teknologi, pegiat literasi, pengembang pembelajaran digital, dan aktivis komunitas." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://www.rulilesmana.my.id/" />
+    <meta name="twitter:title" content="Ruli Lesmana, S.T. | Pendidik, Teknolog & Penggerak Literasi" />
+    <meta name="twitter:description" content="Website portofolio profesional Ruli Lesmana, S.T. - Pendidik Informatika, Instruktur Teknologi, Pegiat Literasi, Pengembang Pembelajaran Digital, dan Sekretaris Komunitas Ngejah." />
+    <meta name="twitter:image" content="https://www.rulilesmana.my.id/ruli-lesmana.jpg" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
 
-    <!-- Structured Data (JSON-LD) for SEO -->
+    <!-- Structured Data (JSON-LD) for Search Engines -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Ruli Lesmana, S.T.",
-      "alternateName": "Kang Ruli",
-      "jobTitle": "Pendidik, Instruktur Teknologi, Pegiat Literasi",
-      "worksFor": [
+      "@graph": [
         {
-          "@type": "EducationalOrganization",
-          "name": "SMKN Bojonggambir"
+          "@type": "Person",
+          "@id": "https://www.rulilesmana.my.id/#person",
+          "name": "Ruli Lesmana, S.T.",
+          "alternateName": ["Kang Ruli", "Roeli Lesmana"],
+          "jobTitle": "Pendidik, Instruktur Teknologi, Pegiat Literasi",
+          "description": "Pendidik Informatika, Instruktur Teknologi, Pegiat Literasi, Pengembang Pembelajaran Digital, dan Sekretaris Komunitas Ngejah.",
+          "image": "https://www.rulilesmana.my.id/ruli-lesmana.jpg",
+          "worksFor": [
+            {
+              "@type": "EducationalOrganization",
+              "name": "SMKN Bojonggambir"
+            },
+            {
+              "@type": "EducationalOrganization",
+              "name": "PKBM Celah Cahaya"
+            }
+          ],
+          "almaMater": [
+            {
+              "@type": "EducationalOrganization",
+              "name": "Universitas Amikom Yogyakarta"
+            },
+            {
+              "@type": "EducationalOrganization",
+              "name": "STMIK DCI Tasikmalaya"
+            }
+          ],
+          "url": "https://www.rulilesmana.my.id",
+          "sameAs": [
+            "https://www.linkedin.com/in/ruli-lesmana/",
+            "https://www.facebook.com/ruli.lesmana/",
+            "https://www.instagram.com/kang.ruli/",
+            "https://www.tiktok.com/@kangruli87",
+            "https://www.kompasiana.com/rulilesmana7929",
+            "https://kumparan.com/celah-cahaya",
+            "https://rulilesm.wordpress.com/tentang-saya/",
+            "https://www.quora.com/profile/Ruli-Lesmana",
+            "https://www.kangruli.web.id/",
+            "https://www.komunitasngejah.web.id"
+          ],
+          "knowsAbout": [
+            "Informatika",
+            "Teknologi Informasi",
+            "Desain Komunikasi Visual (DKV)",
+            "Literasi Digital",
+            "Guru Penggerak",
+            "Pendidikan Kesetaraan",
+            "Pengembangan Web"
+          ],
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Kp. Sukawangi RT. 10 RW. 01, Desa Sukawangi",
+            "addressLocality": "Singajaya",
+            "addressRegion": "Kab. Garut",
+            "postalCode": "44173",
+            "addressCountry": "ID"
+          },
+          "email": "roeli.eunih.sjy@gmail.com",
+          "telephone": "+6281223546686"
         },
         {
-          "@type": "EducationalOrganization",
-          "name": "PKBM Celah Cahaya"
-        }
-      ],
-      "almaMater": [
-        {
-          "@type": "EducationalOrganization",
-          "name": "Universitas Amikom Yogyakarta"
+          "@type": "WebSite",
+          "@id": "https://www.rulilesmana.my.id/#website",
+          "url": "https://www.rulilesmana.my.id",
+          "name": "Ruli Lesmana, S.T. - Portfolio",
+          "description": "Website Portofolio Resmi Ruli Lesmana, S.T.",
+          "inLanguage": "id-ID",
+          "publisher": {
+            "@id": "https://www.rulilesmana.my.id/#person"
+          }
         },
         {
-          "@type": "EducationalOrganization",
-          "name": "STMIK DCI Tasikmalaya"
+          "@type": "ProfilePage",
+          "@id": "https://www.rulilesmana.my.id/#webpage",
+          "url": "https://www.rulilesmana.my.id",
+          "name": "Ruli Lesmana, S.T. | Pendidik, Teknolog & Penggerak Literasi",
+          "isPartOf": {
+            "@id": "https://www.rulilesmana.my.id/#website"
+          },
+          "mainEntity": {
+            "@id": "https://www.rulilesmana.my.id/#person"
+          },
+          "inLanguage": "id-ID"
         }
-      ],
-      "url": "https://www.rulilesmana.my.id",
-      "sameAs": [
-        "https://www.kangruli.web.id",
-        "https://www.komunitasngejah.web.id"
-      ],
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Kp. Sukawangi RT. 10 RW. 01, Desa Sukawangi",
-        "addressLocality": "Singajaya",
-        "addressRegion": "Kab. Garut",
-        "postalCode": "44173",
-        "addressCountry": "ID"
-      },
-      "email": "roeli.eunih.sjy@gmail.com",
-      "telephone": "+6281223546686"
+      ]
     }
     </script>
   </head>

@@ -1,12 +1,13 @@
 import { Project, Experience, Education, Certification, SocialLink, HardSkill, SoftSkill, Publication, Role, StatItem, BlogPost } from '../types';
-import digitalLabImg from '../assets/images/digital_learning_lab_1786492016157.jpg';
-import tbmReadingImg from '../assets/images/community_tbm_reading_1786492034508.jpg';
-import techWorkshopImg from '../assets/images/educator_tech_workshop_1786492049421.jpg';
+import ruliPhoto from '../assets/profile.jpg';
+import digitalLabImg from '../assets/digital_learning_lab.jpg';
+import tbmReadingImg from '../assets/community_tbm_reading.jpg';
+import techWorkshopImg from '../assets/educator_tech_workshop.jpg';
 
 export const PROFILE_DATA = {
   name: "Ruli Lesmana, S.T.",
   nickname: "Kang Ruli",
-  photoUrl: "https://lh3.googleusercontent.com/d/1eS3eEVmrq9MKYnWuE8xcpoq-WwM7xaFj",
+  photoUrl: ruliPhoto,
   drivePhotoUrl: "https://drive.google.com/file/d/1eS3eEVmrq9MKYnWuE8xcpoq-WwM7xaFj/view?usp=drive_link",
   tagline: "Pendidik • Teknolog • Penggerak Literasi",
   headline: "Pendidik. Teknolog. Penggerak Literasi.",
@@ -159,7 +160,7 @@ export const PROJECTS_DATA: Project[] = [
     description: "Website personal dan pusat informasi mengenai profil, aktivitas, serta karya Ruli Lesmana, S.T.",
     url: "https://www.kangruli.web.id/",
     category: "Personal",
-    previewUrl: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&q=80",
+    previewUrl: digitalLabImg,
     tags: ["Personal Hub", "CMS", "Branding", "Responsive"],
     year: "2023",
     features: ["Profil Aktivitas", "Kumpulan Karya", "Informasi Layanan Edukasi", "Blog Personal"],
@@ -171,7 +172,7 @@ export const PROJECTS_DATA: Project[] = [
     description: "Platform pembelajaran dan eksplorasi materi Desain Komunikasi Visual untuk siswa dan pembelajar digital.",
     url: "https://dkv-learnstudio.kangruli.web.id/",
     category: "Pembelajaran",
-    previewUrl: "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=1200&q=80",
+    previewUrl: techWorkshopImg,
     tags: ["Visual Design", "E-Learning", "Modul Digital", "Interaktif"],
     year: "2023",
     features: ["Galeri Desain", "Modul Pembelajaran DKV", "Latihan & E-Resource", "Portofolio Siswa"],
@@ -183,7 +184,7 @@ export const PROJECTS_DATA: Project[] = [
     description: "Platform pembelajaran berbasis teknologi dan literasi digital untuk meningkatkan kompetensi TIK.",
     url: "https://digital-learnstudio.kangruli.web.id/",
     category: "Pembelajaran",
-    previewUrl: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80",
+    previewUrl: digitalLabImg,
     tags: ["Digital Literacy", "Informatika", "Tech Platform", "Interactive"],
     year: "2022",
     features: ["Materi Informatika", "Panduan Tool TIK", "Quiz & Evaluasi", "Literasi Digital"],
@@ -195,7 +196,7 @@ export const PROJECTS_DATA: Project[] = [
     description: "Platform komunitas yang bergerak dalam bidang literasi, pendidikan, dan pemberdayaan masyarakat.",
     url: "https://www.komunitasngejah.web.id/",
     category: "Komunitas",
-    previewUrl: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=80",
+    previewUrl: tbmReadingImg,
     tags: ["Literasi", "Komunitas", "Sosial", "Pemberdayaan"],
     year: "2021",
     features: ["Portal Berita Komunitas", "Katalog Bacaan TBM", "Dokumentasi Kegiatan", "Program Relawan"],
@@ -207,7 +208,7 @@ export const PROJECTS_DATA: Project[] = [
     description: "Platform digital resmi lembaga pendidikan nonformal Celah Cahaya untuk kesetaraan dan literasi masyarakat.",
     url: "https://www.celahcahaya.sch.id/",
     category: "Pendidikan Nonformal",
-    previewUrl: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1200&q=80",
+    previewUrl: tbmReadingImg,
     tags: ["Pendidikan Nonformal", "Kesetaraan", "PKBM", "Informasi Akademik"],
     year: "2021",
     features: ["Informasi Pendaftaran", "Modul Pembelajaran Paket", "Galeri Pembelajaran", "Layanan Siswa"],
@@ -219,7 +220,7 @@ export const PROJECTS_DATA: Project[] = [
     description: "Platform lembaga pelatihan yang berfokus pada pengembangan keterampilan TIK dan teknologi informasi profesional.",
     url: "https://www.lpkalphabeta.eu.org/",
     category: "Pelatihan TIK",
-    previewUrl: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=80",
+    previewUrl: techWorkshopImg,
     tags: ["Pelatihan TIK", "Komputer", "Keterampilan Kerja", "Vokasi"],
     year: "2020",
     features: ["Program Pelatihan TIK", "Jadwal Kursus", "Sertifikasi", "Sistem Pendaftaran"],
